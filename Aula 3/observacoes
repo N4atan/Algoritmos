@@ -1,0 +1,26 @@
+Sintaxe = Jeito correto de escrever um comando.
+Para ser um arquivo javascript, usar extensa ".js".
+
+Comentarios sao feitos da mesma maneira do que no gms, recomendacao do professor, sempre faze-los.
+*'crtl + : ' em texto selecionado, deixa tudo em comentario.
+
+Para executar, no terminal 'node'. Para utiliza-lo.
+
+Nas variaveis, 'let' é uma var que posso trocar, ja 'const' é uma que nao se altera.
+Nome de var nao se utiliza espaço, se utiliza _.
+Dica= 'nomeCompleto' primeira letra minuscula e a segunda maiuscula.
+
+Tipos: number, string (texto), booleans (true or false). Ex:
+    Var_Numbers:                        *se tiver aspas, é tratado como string*
+            const idade = 21
+            const ano = 2024
+
+    Var_String:                   *não esqueça das aspas. se quiser colocar algo dps da var 'var +"." '*
+            const nome = "Natan"
+            const nomeCachorroFav = "B-Neve"
+
+    Var-Boolean:                        *não vai aspas*
+            let souUmBoolean = true
+            souUmBoolean = false        *não cria outra, apenas modifica uma já criada*
+
+Para ver o tipo de uma var usamos o 'typeof'
