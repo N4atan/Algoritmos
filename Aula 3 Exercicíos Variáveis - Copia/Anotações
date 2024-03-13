@@ -1,0 +1,2 @@
+Consigo modificar uma var que não foi criada.
+Caso apenas crie ela, porém não lhe atribuo nada, fica indefinida
