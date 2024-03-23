@@ -1,10 +1,12 @@
-let cliente = ask.question('Qual seu nome ?')
-let tipoGame = ask.question('Temos Internacional ou Domestico. Digite IN para INTERNACIONAL ou DO para DOMESTICO')
-let etapaGame = ask.question('SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final')
-let quantidade = Number(ask.question('Quantos voce ingressos voce quer ?'))
-let categoria = ask.question('1, 2, 3 ou 4 ?')
+let ask = require('readline-sync')
 
-let valorIngresso
+let cliente = ask.question('Qual seu nome ?')
+let tipoGame = ask.question('Temos Internacional ou Domestico. Digite IN para INTERNACIONAL ou DO para DOMESTICO:', )
+let etapaGame = ask.question('SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final:', )
+let quantidade = Number(ask.question('Quantos voce ingressos voce quer ?'))
+let categoria = Number(ask.question('Assentos na 1, 2, 3 ou 4 fileira ?' ))
+
+let valorIngresso = 0
 switch (etapaGame){
     case "FI":
         switch (categoria){
@@ -22,7 +24,6 @@ switch (etapaGame){
                 break
         }
         break
-
     case "SF":
         switch (categoria){
             case 1:
@@ -39,7 +40,6 @@ switch (etapaGame){
                 break
         }
         break
-
     case "DT":
         switch (categoria){
             case 1:
@@ -64,5 +64,10 @@ if (tipoGame === "IN"){
 
 let valorTotal = valorIngresso * quantidade
 
-console.log(nome)
-console.log("Tipo de jogo:", tipoGame)
+console.log(" ----------Dados da Compra----------")
+console.log("Nome:", cliente)
+console.log("Tipo de jogo escolhido:", tipoGame)
+console.log("Etapa do jogo escolhida:", etapaGame)
+console.log("A fileira escolhida foi a ", categoria)
+console.log("E o valor total deu", valorTotal)
+console.log(valorIngresso,quantidade,valorTotal)
